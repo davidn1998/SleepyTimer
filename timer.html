@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doodle Timer</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sofia"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Doodle Time!</h1>
+      <div class="timer-section">
+        <button class="sleepy-button" type="button" onclick="cycleTimer()">
+          <img
+            class="sleepy-img"
+            id="sleepyIcon"
+            class=""
+            src="sleepy.png"
+            alt=""
+          />
+        </button>
+        <div class="timer" id="timerText">00:00</div>
+      </div>
+      <div class="buttons">
+        <button type="button" id="togglePlayButton" onclick="togglePlayTimer()">
+          <i class="fas fa-play buttonIcon"></i>
+        </button>
+        <button type="button" id="resetButton" onclick="resetTimer()">
+          <i class="fas fa-redo buttonIcon"></i>
+        </button>
+      </div>
+      <audio
+        id="alarmAudio"
+        src="anime-wow-sound-effect.mp3"
+        type="audio/mpeg"
+      ></audio>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/a75ecf121b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="timer.js"></script>
+  </body>
+</html>
